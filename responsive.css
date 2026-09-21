@@ -1,0 +1,208 @@
+@media screen and (min-width: 68.3125rem) {
+  body {
+    display: grid;
+    grid-template-columns: 22rem 1fr;
+    min-height: 100svh;
+    max-width: none;
+  }
+
+  .dashboard-sidebar {
+    border-right: 0.1rem solid hsl(36, 22%, 86%);
+    padding: 0 1rem;
+  }
+
+  .humbargar-icon {
+    display: none;
+  }
+
+  .main-navigation {
+    display: flex;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+
+  .sidebar-widgets {
+    display: flex;
+  }
+
+  .weather-card::after {
+    right: -10.4rem;
+    top: -3.9rem;
+  }
+
+  .weather-card::before {
+    right: -10.4rem;
+    top: -3.2rem;
+  }
+
+  .dashed-line {
+    display: block;
+  }
+
+  .sidebar-footer {
+    display: flex;
+  }
+
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    padding: 2rem;
+  }
+
+  .booking-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    /* border: 0.5rem solid red; */
+  }
+
+  .btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    /* border: 0.1rem solid red; */
+    height: 100%;
+  }
+
+  .btn--print-receipt {
+    padding: 0.625rem 1.5rem;
+  }
+
+  .position-overlap {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: start;
+    min-height: 28%;
+    cursor: pointer;
+  }
+
+  .sun-illustrations {
+    position: absolute;
+    top: 0;
+    bottom: -4rem;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 0.1rem solid red; */
+  }
+
+  .sun {
+    display: flex;
+    width: 9rem;
+    height: 9rem;
+    /* opacity: 0.85; */
+    margin-top: 8.5rem;
+    /* display: none; */
+  }
+
+  .sun-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 100%;
+    /* border: 0.1rem solid red; */
+  }
+
+  .sun-desc p {
+    text-transform: uppercase;
+    font-family: var(--ff-DM-Mono);
+    font-size: var(--fs-paragraph);
+    font-weight: var(--fw-medium);
+    word-spacing: 0.2rem;
+    color: var(--clr-neutral-600);
+    margin-bottom: 2.5rem;
+  }
+
+  .host-card {
+    /* display: none; */
+    transform: rotate(2.4deg);
+    z-index: 2;
+    max-width: 22.5rem;
+    margin-left: -1.5rem;
+  }
+
+  .receipt-card {
+    /* display: none; */
+    transform: rotate(-4.5deg);
+    z-index: 1;
+    max-width: 22.5rem;
+  }
+
+  .guest-info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 1rem;
+  }
+
+  /* Active State */
+  .host-card,
+  .receipt-card {
+    transition: transform 0.4s ease;
+  }
+
+  .position-overlap:hover .host-card {
+    transform: rotate(8deg) translateX(5rem);
+  }
+
+  .position-overlap:hover .receipt-card {
+    transform: rotate(-8deg) translateX(-5rem);
+  }
+
+  ul li:hover:not(.active) {
+    background-color: var(--clr-neutral-0);
+    width: 100%;
+  }
+
+  .btn,
+  .copy-password {
+    transition: all 0.3s ease;
+  }
+
+  .btn--print-receipt:hover {
+    background-color: hsla(33, 17%, 41%, 0.052);
+  }
+
+  .btn--add-calendar:hover {
+    background-color: hsl(32, 20%, 29%);
+  }
+
+  .copy-password:hover {
+    background-color: hsl(36, 22%, 86%);
+  }
+
+  li a:focus-visible {
+    outline: 0.2rem solid hsl(18, 62%, 47%);
+    outline-offset: 0.625rem;
+    border-radius: 0.325rem;
+  }
+
+  .btn--print-receipt:focus-visible {
+    outline: 0.2rem solid hsl(18, 62%, 47%);
+    outline-offset: 0.125rem;
+    border-radius: 1.5rem;
+  }
+
+  .btn--add-calendar:focus-visible {
+    outline: 0.2rem solid hsl(18, 62%, 47%);
+    outline-offset: 0.125rem;
+    border-radius: 1.5rem;
+  }
+
+  .copy-password:focus-visible {
+    outline: 0.1rem solid hsl(18, 62%, 47%);
+    outline-offset: 0.1rem;
+    border-radius: 1.5rem;
+  }
+}
