@@ -41,8 +41,9 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add your solution URL here]
-- Live Site URL: [Add your live site URL here]
+- Solution URL: https://www.frontendmentor.io/solutions/responsive-hotel-booking-page-using-css-grid-and-flexbox-bNehY8x_Yq
+
+- Live Site URL: https://debumandal.github.io/hotel-booking-confirmation-page/
 
 ## My Process
 
